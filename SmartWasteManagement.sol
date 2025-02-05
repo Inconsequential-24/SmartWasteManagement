@@ -77,7 +77,6 @@ contract SmartWasteManagement {
         require(_fineAmount > 0, "Fine amount must be greater than zero");
 
         // Implement fine imposition logic (e.g., transfer tokens to a specific account)
-        // This is a simplified example and may need to be adapted based on your use case
         // For demonstration purposes, we deduct the fine amount from the user's digital coupons balance
         require(userBalances[_user] >= _fineAmount, "User does not have sufficient balance for the fine");
         userBalances[_user] -= _fineAmount;
